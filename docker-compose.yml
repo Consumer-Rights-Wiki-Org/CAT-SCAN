@@ -1,0 +1,8 @@
+---
+services:
+  clamav:
+    image: clamav/clamav:latest
+    container_name: euphie
+    volumes:
+      - .:/files
+    restart: unless-stopped
