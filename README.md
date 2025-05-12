@@ -31,7 +31,11 @@ sudo docker-compose up -d
 3. Run the `scan.sh` script with the file name as an argument:
  ```bash
 sudo ./scan.sh file-name
-``` 
+```
+4. Review results:
+   
+   ![clamav.png](https://github.com/Consumer-Rights-Wiki-Org/CAT-SCAN/blob/main/clamav.png?raw=true)
+
 ## Notes
 
 - The script will remove the file from your system after scanning it. If you do not want this to happend, delete or comment out the last line in `scan.sh`: `docker exec "$CONTAINER_NAME" rm "/files/$FILENAME"`
